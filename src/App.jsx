@@ -1,5 +1,6 @@
 import React from 'react'
 import Landingpage from './pages/Landingpage'
+import SignUpPage from './pages/Signuppage'
 
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-     <Landingpage></Landingpage>
+     {/* <Landingpage></Landingpage> */}
+     <SignUpPage></SignUpPage>
     </>
   )
 }
