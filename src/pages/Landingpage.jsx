@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const LandingPage = () => {
+  const featuresRef = useRef(null);
+  const scrollToFeatures = () => {
+    featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div>
       <Navbar />
-      <header className="bg-blue-600 text-white py-20 text-center">
+      <header className="bg-blue-900 text-white py-10 text-center">
         <h1 className="text-5xl font-bold">AI-Driven Research Engine for Commercial Courts</h1>
         <p className="mt-4 text-lg">
           Streamline your legal research and expedite commercial dispute resolution with AI-powered insights.
         </p>
-        <button className="mt-8 bg-white text-blue-600 py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-100">
-          Get Started
-        </button>
+        <div>
+          <button
+            onClick={scrollToFeatures} 
+            className="mt-8 bg-white text-blue-600 py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-100"
+          >
+            Get Started
+          </button>
+        </div>
       </header>
 
       <section className="py-16 bg-gray-100">
@@ -36,7 +46,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16" ref={featuresRef}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
