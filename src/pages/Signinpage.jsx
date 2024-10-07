@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Signinpage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,13 +13,13 @@ const Signinpage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white shadow-md rounded-lg p-8 w-96">
-        <h2 className="text-2xl font-bold text-center mb-6">Sign In</h2>
+    <div className="flex items-center justify-center min-h-screen bg-slate-700">
+      <div className="bg-white shadow-md rounded-xl p-8 w-96">
+        
         
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700" htmlFor="email">Email</label>
+            <label className="block text-lg font-medium text-gray-900" htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -31,7 +32,7 @@ const Signinpage = () => {
           </div>
 
           <div className="mb-6">
-            <label className="block text-sm font-medium text-gray-700" htmlFor="password">Password</label>
+            <label className="block text-lg font-medium text-gray-900" htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
@@ -45,7 +46,7 @@ const Signinpage = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
           >
             Sign In
           </button>
