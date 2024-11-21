@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-900 p-4 relative">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">
-          <a href="#home">BrandName</a>
+        <div className="text-white text-lg font-bold hover:text-indigo-400 hover:scale-110">
+          <a href='#'>LegalEdgeAI</a>
         </div>
 
         <div className="flex items-center space-x-4">
@@ -63,10 +63,11 @@ const Navbar = () => {
 
       <div className="container mx-auto flex justify-between items-center mt-4">
         <div className="hidden md:flex space-x-6">
-          <a href="#home" className="text-white hover:bg-gray-500">Home</a>
-          <a href="#about" className="text-white hover:bg-gray-500">About</a>
-          <a href="#services" className="text-white hover:bg-gray-500">Services</a>
-          <a href="#contact" className="text-white hover:bg-gray-500">Contact</a>
+          <a href="/" className="text-white hover:bg-gray-500">Home</a>
+          <a href="/about" className="text-white hover:bg-gray-500">About</a>
+          <a href="/analysis" className="text-white hover:bg-gray-500">Analysis</a>
+          <a href="/localization" className="text-white hover:bg-gray-500">Localization</a>
+          <a href="/contact" className="text-white hover:bg-gray-500">Contact</a>
         </div>
 
         <div className="flex items-center space-x-4">
